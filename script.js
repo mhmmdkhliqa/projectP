@@ -1,4 +1,4 @@
-/* menu aktif saat scroll */
+//menu aktif saat scroll pake AI T_T//
 const sections = document.querySelectorAll("section");
 const links = document.querySelectorAll(".menu a");
 
@@ -53,4 +53,12 @@ form.addEventListener("submit", (e) => {
   const isi = `Nama: ${nama}\nEmail: ${email}\n\n${pesan}`;
   window.location.href =
     `mailto:mhmmdkhliqa@gmail.com?subject=${encodeURIComponent("Pesan dari " + nama)}&body=${encodeURIComponent(isi)}`;
+});
+
+
+//glow//
+const glow = document.querySelector(".glow");
+
+document.addEventListener("mousemove", (e) => {
+  glow.style.transform = `translate(${e.clientX - 200}px, ${e.clientY - 200}px)`;
 });

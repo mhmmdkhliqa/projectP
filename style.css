@@ -224,70 +224,6 @@ section{
   box-shadow:0 0 18px #7367ff;
 }
 
-/*tampilan hp*/
-@media (max-width:800px){
-  .kartu-mini{
-    flex-direction: column;
-  }
-  .contact-isi{
-    flex-direction:column;
-    gap:40px;
-  }
-  .contact-info{
-    text-align:center;
-  }
-  .daftar-kontak{
-    align-items:center;
-  }
-  .ikon-kontak{
-    justify-content:center
-  }
-  .form{
-    padding:24px;
-  }
-  .soon h3{
-    font-size: 30px;
-  }
-  .navbar{
-    flex-wrap:wrap;
-    padding:12px 16px;
-    row-gap:10px;
-  }
-  .logo{
-    order:1;flex:1;
-  }
-  .logo img{
-    height:30px;
-  }
-  .sosial{
-    order:2;flex:0 0 auto;
-    gap:12px;
-  }
-  .sosial img{
-    width:22px;
-    height:22px
-  }
-  .menu{
-    order:3;
-    flex:0 0 100%;
-    justify-content:space-around;
-    gap:0;
-    font-size:14px;
-  }
-
-  section{
-    padding:100px 24px 40px;
-  }
-  #home{
-    flex-direction:column-reverse;
-    align-items:center;
-  }
-  .orbit{
-    transform:scale(0.8);
-  }
-}
-
-
 /*ABOUT ME*/
 .about-isi{
   display:flex;
@@ -477,4 +413,153 @@ section{
 .muncul-nanti.muncul{
   opacity:1;
   transform:translateY(0);
+}
+
+/*glow*/
+.glow{
+  position:fixed;
+  top:0;
+  left:0;
+  width:400px;
+  height:400px;
+  border-radius:50%;
+  background:radial-gradient(circle, rgba(115,103,255,0.25), transparent 70%);
+  pointer-events:none;
+  z-index:0;
+  will-change:transform;
+}
+
+
+/*tampilan hape*/
+@media (max-width:800px){
+
+  .glow{
+    display:none;
+  }
+
+  /*navbar*/
+  .navbar{
+    flex-wrap:wrap;
+    padding:10px 16px;
+    row-gap:8px;
+  }
+
+  .logo{
+    order:1;
+    flex:1;
+  }
+
+  .logo img{
+    height:36px;
+  }
+
+  .sosial{
+    order:2;
+    flex:0 0 auto;
+    gap:12px;
+  }
+
+  .sosial img{
+    width:22px;
+    height:22px;
+  }
+
+  .menu{
+    order:3;
+    flex:0 0 100%;
+    justify-content:space-around;
+    gap:0;
+    font-size:14px;
+  }
+
+  /*section*/
+  section{
+    padding:90px 20px 40px;
+    min-height:auto;
+  }
+
+  /*home*/
+  #home{
+    flex-direction:column-reverse;
+    padding:90px 20px 40px;
+    gap:20px;
+  }
+
+  .teks{
+    text-align:center;
+  }
+
+  #home h1{
+    font-size:30px;
+  }
+
+  #home h2{
+    font-size:20px;
+  }
+
+  .deskripsi{
+    font-size:16px;
+    max-width:100%;
+    text-align:center;
+  }
+
+  .tombol{
+    justify-content:center;
+    flex-wrap:wrap;
+  }
+
+  .orbit{
+    transform:scale(0.75);
+    margin:-45px 0;
+  }
+
+  /*about*/
+  .about-isi{
+    flex-direction:column;
+    gap:30px;
+  }
+
+  .about-foto{
+    width:220px;
+    height:260px;
+  }
+
+  .about-teks{
+    text-align:center;
+    font-size:15px;
+  }
+
+  .kartu-mini{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  /*project*/
+  .soon h3{
+    font-size:30px;
+  }
+
+  /*contact*/
+  .contact-isi{
+    flex-direction:column;
+    gap:40px;
+    margin-top:0;
+  }
+
+  .contact-info{
+    text-align:center;
+  }
+
+  .daftar-kontak{
+    align-items:center;
+  }
+
+  .ikon-kontak{
+    justify-content:center;
+  }
+
+  .form{
+    padding:22px;
+    border-radius:30px;
+  }
 }
